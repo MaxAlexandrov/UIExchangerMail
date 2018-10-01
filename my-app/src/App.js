@@ -18,14 +18,7 @@ class App extends Component {
              <a href="http://localhost:8080/user-room">
              <img src={key} className = "frond_page_icon" alt="user room"/></a>
            </p>
-
-           <p className="App-login">
-           <form action="http://localhost:8080/login/" method="post">
-               <div><label> User Name : <input type="text" name="username"/> </label></div>
-               <div><label> Password: <input type="password" name="password"/> </label></div>
-               <div><input type="submit" value="Sign In"/></div>
-           </form>
-           </p>
+           <hr />
          </div>
        );
      }

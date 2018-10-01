@@ -27,6 +27,28 @@
   to { transform: rotate(360deg); }
 }
 
+.App-login input, select, option{
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 20px;
+  border: 2px solid #8FBC8F;
+  border-radius: 50px 50px  0 50px;
+}
+.App-login textarea{
+  width:60%;
+  height:20%;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 2px solid #8FBC8F;
+  border-radius: 50px 50px  0 50px;
+}
+.App-login button {
+  margin: 10px;
+  color: white;
+  background: #8FBC8F;
+  border: 2px solid #8FBC8F;
+  border-radius: 3px;
+}
 .App-login div{
 margin:50px;
 }

@@ -1,8 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React, { Component } from 'react';
+import './App.css';
 
-ReactDOM.render(<Login />, document.getElementById('login'));
-registerServiceWorker();
+class Login extends Component {
+     render() {
+       return (
+         <div className="App">
+           <p className="App-login">
+           <form action="http://localhost:8080/login/" method="post">
+               <label> {this.props.headingName}: <input type="text" name="username"/> </label>
+               <label> {this.props.headingPassword}: <input type="password" name="password"/> </label>
+               <button type="submit">{this.props.headingButton}</button>
+           </form>
+           </p>
+         </div>
+       );
+     }
+   }
+export default Login;
